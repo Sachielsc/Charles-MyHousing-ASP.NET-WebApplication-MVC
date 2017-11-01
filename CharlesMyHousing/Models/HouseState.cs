@@ -20,9 +20,9 @@ namespace CharlesMyHousing.Models
         public string Description { get; set; }
         public int? Bedroom { get; set; }
         public int? Bathroom { get; set; }
-        public int? CarparkOk { get; set; }
-        public int? PetOk { get; set; }
-        public int OnMarktetFlg { get; set; }
+        public bool? CarparkOk { get; set; }
+        public bool? PetOk { get; set; }
+        public bool? OnMarktetFlg { get; set; }
         public int? Latitude { get; set; }
         public int? Longitude { get; set; }
 
