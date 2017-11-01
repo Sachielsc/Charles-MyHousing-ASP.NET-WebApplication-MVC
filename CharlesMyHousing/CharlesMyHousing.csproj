@@ -165,6 +165,7 @@
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
     <Compile Include="Models\MyHousingContext.cs" />
+    <Compile Include="Models\MyHousingInitializer.cs" />
     <Compile Include="Models\RentCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
