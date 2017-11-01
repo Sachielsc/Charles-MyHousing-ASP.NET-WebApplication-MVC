@@ -12,7 +12,7 @@ namespace CharlesMyHousing.Models
         public int HousePictureId { get; set; }
 
         public string ImagePath { get; set; }
-        public int? MainImgFlg { get; set; }
+        public bool? MainImgFlg { get; set; }
 
         // Foreign key 
         public int HouseStateId { get; set; }
