@@ -153,15 +153,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711010200162_InitialModels.cs" />
-    <Compile Include="Migrations\201711010200162_InitialModels.Designer.cs">
-      <DependentUpon>201711010200162_InitialModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711010210257_ChangeVariableTypeToBoolean.cs" />
-    <Compile Include="Migrations\201711010210257_ChangeVariableTypeToBoolean.Designer.cs">
-      <DependentUpon>201711010210257_ChangeVariableTypeToBoolean.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
     <Compile Include="Models\MyHousingContext.cs" />
@@ -210,11 +201,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\HouseStates\Create.cshtml" />
-    <Content Include="Views\HouseStates\Delete.cshtml" />
-    <Content Include="Views\HouseStates\Details.cshtml" />
-    <Content Include="Views\HouseStates\Edit.cshtml" />
-    <Content Include="Views\HouseStates\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -231,14 +217,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711010200162_InitialModels.resx">
-      <DependentUpon>201711010200162_InitialModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711010210257_ChangeVariableTypeToBoolean.resx">
-      <DependentUpon>201711010210257_ChangeVariableTypeToBoolean.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
