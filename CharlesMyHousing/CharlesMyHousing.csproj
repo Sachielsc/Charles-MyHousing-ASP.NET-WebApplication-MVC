@@ -157,11 +157,22 @@
     <Compile Include="Migrations\201711020209018_InitialModel.Designer.cs">
       <DependentUpon>201711020209018_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711030057303_PopulateHouseState.cs" />
+    <Compile Include="Migrations\201711030057303_PopulateHouseState.Designer.cs">
+      <DependentUpon>201711030057303_PopulateHouseState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711030230457_ChangeRentRateInSeededData.cs" />
+    <Compile Include="Migrations\201711030230457_ChangeRentRateInSeededData.Designer.cs">
+      <DependentUpon>201711030230457_ChangeRentRateInSeededData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711030253047_MinorChanges.cs" />
+    <Compile Include="Migrations\201711030253047_MinorChanges.Designer.cs">
+      <DependentUpon>201711030253047_MinorChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
     <Compile Include="Models\MyHousingContext.cs" />
-    <Compile Include="Models\MyHousingInitializer.cs" />
     <Compile Include="Models\RentCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -233,6 +244,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711020209018_InitialModel.resx">
       <DependentUpon>201711020209018_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711030057303_PopulateHouseState.resx">
+      <DependentUpon>201711030057303_PopulateHouseState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711030230457_ChangeRentRateInSeededData.resx">
+      <DependentUpon>201711030230457_ChangeRentRateInSeededData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711030253047_MinorChanges.resx">
+      <DependentUpon>201711030253047_MinorChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

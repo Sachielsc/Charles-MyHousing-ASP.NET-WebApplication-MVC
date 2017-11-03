@@ -1,3 +1,5 @@
+using CharlesMyHousing.Models;
+
 namespace CharlesMyHousing.Migrations
 {
     using System;
@@ -18,6 +20,63 @@ namespace CharlesMyHousing.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
+            context.HouseStates.AddOrUpdate(x => x.HouseStateId,
+                new HouseState
+                {
+                    HouseStateId = 1,
+                    HouseType = 1,
+                    Postcode = "0600",
+                    RentRate = 0.8m,
+                    MainAddress = "6/14 Ambrico Place",
+                    Suburb = "New Lynn",
+                    Region = "Auckland",
+                    Description = "My Auckland Address",
+                    Bedroom = 3,
+                    Bathroom = 2,
+                    CarparkOk = true,
+                    PetOk = false,
+                    OnMarktetFlg = true,
+                    Latitude = 0,
+                    Longitude = 0
+                },
+                new HouseState
+                {
+                    HouseStateId = 2,
+                    HouseType = 1,
+                    Postcode = "8042",
+                    RentRate = 1.0m,
+                    MainAddress = "26 Valiant Street",
+                    Suburb = "Wigram",
+                    Region = "Christchurch",
+                    Description = "My Christchurch Address",
+                    Bedroom = 2,
+                    Bathroom = 2,
+                    CarparkOk = true,
+                    PetOk = false,
+                    OnMarktetFlg = true,
+                    Latitude = 0,
+                    Longitude = 0
+                },
+                new HouseState
+                {
+                    HouseStateId = 3,
+                    HouseType = 1,
+                    Postcode = "6037",
+                    RentRate = 1.0m,
+                    MainAddress = "11 Angell St",
+                    Suburb = "Johnsonville",
+                    Region = "Wellington",
+                    Description = "My Wellington Address",
+                    Bedroom = 4,
+                    Bathroom = 2,
+                    CarparkOk = true,
+                    PetOk = false,
+                    OnMarktetFlg = true,
+                    Latitude = 0,
+                    Longitude = 0
+                }
+            );
         }
     }
 }
