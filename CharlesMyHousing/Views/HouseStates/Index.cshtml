@@ -15,7 +15,7 @@
             @Html.DisplayNameFor(model => model.HouseStateId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.HouseType)
+            @Html.DisplayNameFor(model => model.HouseName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Postcode)
@@ -48,9 +48,6 @@
             @Html.DisplayNameFor(model => model.PetOk)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.OnMarktetFlg)
-        </th>
-        <th>
             <p>
                 Select Your Process:
             </p>
@@ -63,7 +60,7 @@
             @Html.DisplayFor(modelItem => item.HouseStateId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.HouseType)
+            @Html.DisplayFor(modelItem => item.HouseName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Postcode)
@@ -94,9 +91,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.PetOk)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OnMarktetFlg)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new {id = item.HouseStateId}) |

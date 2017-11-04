@@ -11,6 +11,7 @@ namespace CharlesMyHousing.Models
         // Primary key
         public int HouseStateId { get; set; }
 
+        public string HouseName { get; set; }
         public int HouseType { get; set; }
         public string Postcode { get; set; }
         public decimal RentRate { get; set; }

@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201711030253047_MinorChanges.Designer.cs">
       <DependentUpon>201711030253047_MinorChanges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711040043317_AddHouseNameProperty.cs" />
+    <Compile Include="Migrations\201711040043317_AddHouseNameProperty.Designer.cs">
+      <DependentUpon>201711040043317_AddHouseNameProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
@@ -253,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711030253047_MinorChanges.resx">
       <DependentUpon>201711030253047_MinorChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711040043317_AddHouseNameProperty.resx">
+      <DependentUpon>201711040043317_AddHouseNameProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

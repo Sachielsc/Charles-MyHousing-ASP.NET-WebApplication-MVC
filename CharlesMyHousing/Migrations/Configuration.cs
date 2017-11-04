@@ -21,13 +21,14 @@ namespace CharlesMyHousing.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
 
-            context.HouseStates.AddOrUpdate(x => x.HouseStateId,
+            context.HouseStates.AddOrUpdate(x => x.HouseName,
                 new HouseState
                 {
                     HouseStateId = 1,
+                    HouseName = "My Auckland Address",
                     HouseType = 1,
                     Postcode = "0600",
-                    RentRate = 0.8m,
+                    RentRate = 1.0m,
                     MainAddress = "6/14 Ambrico Place",
                     Suburb = "New Lynn",
                     Region = "Auckland",
@@ -43,6 +44,7 @@ namespace CharlesMyHousing.Migrations
                 new HouseState
                 {
                     HouseStateId = 2,
+                    HouseName = "My Christchurch Address",
                     HouseType = 1,
                     Postcode = "8042",
                     RentRate = 1.0m,
@@ -61,6 +63,7 @@ namespace CharlesMyHousing.Migrations
                 new HouseState
                 {
                     HouseStateId = 3,
+                    HouseName = "My Wellington Address",
                     HouseType = 1,
                     Postcode = "6037",
                     RentRate = 1.0m,
