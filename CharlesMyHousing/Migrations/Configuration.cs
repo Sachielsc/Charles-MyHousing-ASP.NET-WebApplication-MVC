@@ -28,7 +28,7 @@ namespace CharlesMyHousing.Migrations
                     HouseName = "My Auckland Address",
                     HouseType = 1,
                     Postcode = "0600",
-                    RentRate = 1.0m,
+                    RentRate = 0.8m,
                     MainAddress = "6/14 Ambrico Place",
                     Suburb = "New Lynn",
                     Region = "Auckland",

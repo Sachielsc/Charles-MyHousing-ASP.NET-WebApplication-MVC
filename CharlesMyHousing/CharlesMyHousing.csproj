@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HouseStatesController.cs" />
+    <Compile Include="docs\temp\MyHousingInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,9 +185,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="docs\build_log.txt" />
-    <Content Include="docs\screenshot %281%29.JPG" />
-    <Content Include="docs\screenshot %282%29.JPG" />
-    <Content Include="docs\screenshot %283%29.JPG" />
+    <Content Include="docs\screenshots\screenshot %281%29.JPG" />
+    <Content Include="docs\screenshots\screenshot %282%29.JPG" />
+    <Content Include="docs\screenshots\screenshot %283%29.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
