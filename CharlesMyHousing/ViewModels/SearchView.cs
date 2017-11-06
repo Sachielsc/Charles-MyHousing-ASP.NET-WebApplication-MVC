@@ -10,6 +10,6 @@ namespace CharlesMyHousing.ViewModels
     public class SearchView
     {
         public virtual SearchCondition SearchCondition{ set; get; }
-        public virtual IPagedList<SearchView> SearchViews { set; get; }
+        // public virtual IPagedList<SearchResult> SearchResults { set; get; }
     }
 }

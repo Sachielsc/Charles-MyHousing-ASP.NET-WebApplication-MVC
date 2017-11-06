@@ -18,10 +18,10 @@ namespace CharlesMyHousing.Models
         public DbSet<HouseState> HouseStates { get; set; }
         public DbSet<RentCase> RentCases { get; set; }
         public DbSet<HousePicture> HousePictures { get; set; }
-        public DbSet<SearchCondition> SearchConditions { get; set; }
-        public DbSet<SearchResult> SearchResults { get; set; }
-        public DbSet<DetailView> DetaukDetailViews { get; set; }
-        public DbSet<SearchView> SearchViews { get; set; }
+        //public DbSet<SearchCondition> SearchConditions { get; set; }
+        //public DbSet<SearchResult> SearchResults { get; set; }
+        //public DbSet<DetailView> DetaukDetailViews { get; set; }
+        //public DbSet<SearchView> SearchViews { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
