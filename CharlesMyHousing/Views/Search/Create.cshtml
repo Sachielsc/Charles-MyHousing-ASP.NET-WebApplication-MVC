@@ -1,0 +1,22 @@
+﻿@model CharlesMyHousing.ViewModels.SearchView
+
+@{
+    ViewBag.Title = "Create";
+    // Search View Page
+}
+
+<h2>Enter your search conditions in the following form:</h2>
+@using (Html.BeginForm("Create", "Search"))
+{
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-primary" name="action_btn" value="btnSearch">Search</button>
+        </div>
+    </div>
+}
