@@ -153,6 +153,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HouseStatesController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="docs\temp\MyHousingInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -183,8 +184,10 @@
     <Compile Include="Models\MyHousingContext.cs" />
     <Compile Include="Models\RentCase.cs" />
     <Compile Include="Models\SearchCondition.cs" />
+    <Compile Include="Models\SearchOption.cs" />
     <Compile Include="Models\SearchResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation\ValidDatepickerAttribute.cs" />
     <Compile Include="ViewModels\DetailView.cs" />
     <Compile Include="ViewModels\SearchView.cs" />
   </ItemGroup>
@@ -192,9 +195,13 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="docs\build_log.txt" />
-    <Content Include="docs\screenshots\screenshot %281%29.JPG" />
-    <Content Include="docs\screenshots\screenshot %282%29.JPG" />
-    <Content Include="docs\screenshots\screenshot %283%29.JPG" />
+    <Content Include="docs\data base screen shots\master_condition_item.png" />
+    <Content Include="docs\data base screen shots\rent_case.png" />
+    <Content Include="docs\data base screen shots\rent_house.png" />
+    <Content Include="docs\data base screen shots\rent_house_image.png" />
+    <Content Include="docs\tutorial screen shots\screenshot %281%29.JPG" />
+    <Content Include="docs\tutorial screen shots\screenshot %282%29.JPG" />
+    <Content Include="docs\tutorial screen shots\screenshot %283%29.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -236,10 +243,11 @@
     <Content Include="Views\HouseStates\Details.cshtml" />
     <Content Include="Views\HouseStates\Edit.cshtml" />
     <Content Include="Views\HouseStates\Index.cshtml" />
+    <Content Include="Views\Search\DetailViewPage.cshtml" />
+    <Content Include="Views\Search\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Search\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
