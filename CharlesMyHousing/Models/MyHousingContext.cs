@@ -18,6 +18,7 @@ namespace CharlesMyHousing.Models
         public DbSet<HouseState> HouseStates { get; set; }
         public DbSet<RentCase> RentCases { get; set; }
         public DbSet<HousePicture> HousePictures { get; set; }
+        public DbSet<SearchOption> SearchOptions { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
