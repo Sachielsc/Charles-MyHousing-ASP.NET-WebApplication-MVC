@@ -11,8 +11,54 @@
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="row">
-            </div>
-            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        @Html.LabelFor( m => m.SearchCondition.Location )
+                        <!--just an example for textbox-->
+                        <!--@Html.TextBoxFor(m => m.SearchCondition.Location, new { @class="form-control"})-->
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.SearchCondition.HouseType)
+                        @Html.DropDownListFor(m => m.SearchCondition.HouseType, new SelectList(Model.SearchCondition.HouseTypeList, "SearchOptionId", "ItemName"), "Select your house type", new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        Bedroom from
+                    </div>
+                    
+                    <div class="form-group">
+                        Bedroom to
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        Bathroom from
+                    </div>
+                    
+                    <div class="form-group">
+                        Bathroom to
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        Carpart checkbox
+                    </div>
+                    
+                    <div class="form-group">
+                        Pet checkbox
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        Price from
+                    </div>
+                    
+                    <div class="form-group">
+                        Price to
+                    </div>
+                </div>
             </div>
         </div>
         <div class="panel-footer">
