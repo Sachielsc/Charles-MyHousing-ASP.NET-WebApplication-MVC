@@ -178,6 +178,18 @@
     <Compile Include="Migrations\201711040043317_AddHouseNameProperty.Designer.cs">
       <DependentUpon>201711040043317_AddHouseNameProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711080641004_AddDatabaseSearchOption.cs" />
+    <Compile Include="Migrations\201711080641004_AddDatabaseSearchOption.Designer.cs">
+      <DependentUpon>201711080641004_AddDatabaseSearchOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711080645183_PopulateSearchOptionTable.cs" />
+    <Compile Include="Migrations\201711080645183_PopulateSearchOptionTable.Designer.cs">
+      <DependentUpon>201711080645183_PopulateSearchOptionTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711080706408_PopulateRemainingDataToSearchOption.cs" />
+    <Compile Include="Migrations\201711080706408_PopulateRemainingDataToSearchOption.Designer.cs">
+      <DependentUpon>201711080706408_PopulateRemainingDataToSearchOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
@@ -277,6 +289,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711040043317_AddHouseNameProperty.resx">
       <DependentUpon>201711040043317_AddHouseNameProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711080641004_AddDatabaseSearchOption.resx">
+      <DependentUpon>201711080641004_AddDatabaseSearchOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711080645183_PopulateSearchOptionTable.resx">
+      <DependentUpon>201711080645183_PopulateSearchOptionTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711080706408_PopulateRemainingDataToSearchOption.resx">
+      <DependentUpon>201711080706408_PopulateRemainingDataToSearchOption.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

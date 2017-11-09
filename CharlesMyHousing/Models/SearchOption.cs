@@ -7,5 +7,9 @@ namespace CharlesMyHousing.Models
 {
     public class SearchOption
     {
+        public int SearchOptionId { get; set; }
+        public string GroupName { get; set; }
+        public int ItemValue { get; set; }
+        public string ItemName { get; set; }
     }
 }
