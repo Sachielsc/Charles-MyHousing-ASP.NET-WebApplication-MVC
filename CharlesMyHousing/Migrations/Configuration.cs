@@ -24,7 +24,7 @@ namespace CharlesMyHousing.Migrations
             context.HouseStates.AddOrUpdate(x => x.HouseName,
                 new HouseState
                 {
-                    HouseStateId = 1,
+                    // HouseStateId = 1,
                     HouseName = "My Auckland Address",
                     HouseType = 1,
                     Postcode = "0600",
@@ -43,11 +43,11 @@ namespace CharlesMyHousing.Migrations
                 },
                 new HouseState
                 {
-                    HouseStateId = 2,
+                    // HouseStateId = 2,
                     HouseName = "My Christchurch Address",
                     HouseType = 1,
                     Postcode = "8042",
-                    RentRate = 1.0m,
+                    RentRate = 0.9m,
                     MainAddress = "26 Valiant Street",
                     Suburb = "Wigram",
                     Region = "Christchurch",
@@ -62,7 +62,7 @@ namespace CharlesMyHousing.Migrations
                 },
                 new HouseState
                 {
-                    HouseStateId = 3,
+                    // HouseStateId = 3,
                     HouseName = "My Wellington Address",
                     HouseType = 1,
                     Postcode = "6037",
