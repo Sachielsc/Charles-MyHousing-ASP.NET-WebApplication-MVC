@@ -28,22 +28,24 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         @{
-                            List<SelectListItem> bedroomListItems = new List<SelectListItem>();
-                            bedroomListItems.Add(new SelectListItem
+                            List<SelectListItem> bedroomListItems = new List<SelectListItem>
                             {
-                                Text = "1",
-                                Value = "1"
-                            });
-                            bedroomListItems.Add(new SelectListItem
-                            {
-                                Text = "2",
-                                Value = "2"
-                            });
-                            bedroomListItems.Add(new SelectListItem
-                            {
-                                Text = "3",
-                                Value = "3"
-                            });
+                                new SelectListItem
+                                {
+                                    Text = "1",
+                                    Value = "1"
+                                },
+                                new SelectListItem
+                                {
+                                    Text = "2",
+                                    Value = "2"
+                                },
+                                new SelectListItem
+                                {
+                                    Text = "3",
+                                    Value = "3"
+                                }
+                            };
                         }
                         @Html.LabelFor(m => m.SearchCondition.BedroomFrom)
                         @Html.DropDownListFor(m => m.SearchCondition.Location, new SelectList(bedroomListItems, "Value", "Text"), "Enter minimum bedroom number", new { @class = "form-control"})
