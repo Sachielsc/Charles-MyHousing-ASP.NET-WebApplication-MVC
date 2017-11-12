@@ -190,6 +190,14 @@
     <Compile Include="Migrations\201711080706408_PopulateRemainingDataToSearchOption.Designer.cs">
       <DependentUpon>201711080706408_PopulateRemainingDataToSearchOption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711112356222_AddHouseStateIdNameDisplayAttribute.cs" />
+    <Compile Include="Migrations\201711112356222_AddHouseStateIdNameDisplayAttribute.Designer.cs">
+      <DependentUpon>201711112356222_AddHouseStateIdNameDisplayAttribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711120040183_TryToPopulateRentCaseTable.cs" />
+    <Compile Include="Migrations\201711120040183_TryToPopulateRentCaseTable.Designer.cs">
+      <DependentUpon>201711120040183_TryToPopulateRentCaseTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
@@ -298,6 +306,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711080706408_PopulateRemainingDataToSearchOption.resx">
       <DependentUpon>201711080706408_PopulateRemainingDataToSearchOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711112356222_AddHouseStateIdNameDisplayAttribute.resx">
+      <DependentUpon>201711112356222_AddHouseStateIdNameDisplayAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711120040183_TryToPopulateRentCaseTable.resx">
+      <DependentUpon>201711120040183_TryToPopulateRentCaseTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

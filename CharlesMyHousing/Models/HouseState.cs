@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
@@ -9,6 +10,7 @@ namespace CharlesMyHousing.Models
     public class HouseState
     {
         // Primary key
+        [Display(Name = "HouseStateId (Auto Generated)")]
         public int HouseStateId { get; set; }
 
         public string HouseName { get; set; }
