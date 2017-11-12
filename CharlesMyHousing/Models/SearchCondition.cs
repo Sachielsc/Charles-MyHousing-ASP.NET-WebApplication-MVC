@@ -35,9 +35,5 @@ namespace CharlesMyHousing.Models
         [Required(ErrorMessage = "Check out date is required")]
         [ValidDatepicker]
         public virtual string CheckoutDate { set; get; }
-
-        // Navigation properties
-        public virtual IList<SearchOption> LocationList { get; set; }
-        public virtual IList<SearchOption> HouseTypeList { get; set; }
     }
 }

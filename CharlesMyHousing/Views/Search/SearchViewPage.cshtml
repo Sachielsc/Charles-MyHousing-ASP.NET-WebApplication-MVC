@@ -1,12 +1,11 @@
-﻿@model CharlesMyHousing.ViewModels.SearchView
+﻿@model CharlesMyHousing.ViewModels.SearchViewModel
 
 @{
-    ViewBag.Title = "Create";
-    // Search View Page
+    ViewBag.Title = "SearchViewPage";
 }
 
 <h2>Enter your search conditions in the following form:</h2>
-@using (Html.BeginForm("Create", "Search"))
+@using (Html.BeginForm("SearchViewPage", "Search")) //TODO: change SearchViewPage action
 {
     <div class="panel panel-default">
         <div class="panel-body">
@@ -27,40 +26,23 @@
 
                 <div class="col-md-4">
                     <div class="form-group">
-                        @{
-                            List<SelectListItem> bedroomListItems = new List<SelectListItem>
-                            {
-                                new SelectListItem
-                                {
-                                    Text = "1",
-                                    Value = "1"
-                                },
-                                new SelectListItem
-                                {
-                                    Text = "2",
-                                    Value = "2"
-                                },
-                                new SelectListItem
-                                {
-                                    Text = "3",
-                                    Value = "3"
-                                }
-                            };
-                        }
                         @Html.LabelFor(m => m.SearchCondition.BedroomFrom)
-                        @Html.DropDownListFor(m => m.SearchCondition.Location, new SelectList(bedroomListItems, "Value", "Text"), "Enter minimum bedroom number", new { @class = "form-control"})
+                        @Html.DropDownListFor(m => m.SearchCondition.BedroomFrom, new SelectList(Model.SelectListItems, "Value", "Text"), "Enter minimum bedroom number", new { @class = "form-control"})
                     </div>    
                     <div class="form-group">
-                        Bedroom to
+                        @Html.LabelFor(m => m.SearchCondition.BedroomTo)
+                        @Html.DropDownListFor(m => m.SearchCondition.BedroomTo, new SelectList(Model.SelectListItems, "Value", "Text"), "Enter maximum bedroom number", new { @class = "form-control"})
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="form-group">
-                        Bathroom from
+                        @Html.LabelFor(m => m.SearchCondition.BathroomFrom)
+                        @Html.DropDownListFor(m => m.SearchCondition.BathroomFrom, new SelectList(Model.SelectListItems, "Value", "Text"), "Enter minimum bathroom number", new { @class = "form-control" })
                     </div>    
                     <div class="form-group">
-                        Bathroom to
+                        @Html.LabelFor(m => m.SearchCondition.BathroomTo)
+                        @Html.DropDownListFor(m => m.SearchCondition.BathroomTo, new SelectList(Model.SelectListItems, "Value", "Text"), "Enter maximum bathroom number", new { @class = "form-control" })
                     </div>
                 </div>
 
@@ -69,12 +51,8 @@
                         <label>
                             @Html.CheckBoxFor(m => m.SearchCondition.CarparkOk) Carpark available
                         </label>
-                    </div>    
-                    @*<div class="form-group">
-                        @Html.LabelFor(m => m.SearchCondition.PetOk)
-                        <br/>
-                        @Html.CheckBoxFor(m => m.SearchCondition.PetOk) Pets allowed
-                    </div>*@
+                    </div>
+
                     <div class="checkbox">
                         <label>
                             @Html.CheckBoxFor(m => m.SearchCondition.PetOk) Pets allowed
