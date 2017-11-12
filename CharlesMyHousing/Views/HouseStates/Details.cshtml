@@ -121,6 +121,37 @@
         <dd>
             @Html.DisplayFor(model => model.Longitude)
         </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.RentCases)
+        </dt>
+        <dd>
+        <table class="table">
+            <tr>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>User ID</th>
+                <th>HouseState ID</th>
+            </tr>
+            @foreach (var item in Model.RentCases)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HouseStateId)
+                    </td>
+                </tr>
+            }
+        </table>
+    </dd>
 
     </dl>
 </div>
