@@ -24,7 +24,7 @@ namespace CharlesMyHousing.Migrations
             context.HouseStates.AddOrUpdate(x => x.HouseName,
                 new HouseState
                 {
-                    // HouseStateId = 1,
+                    // HouseStateId = 22,
                     HouseName = "My Auckland Address",
                     HouseType = 1,
                     Postcode = "0600",
@@ -38,12 +38,12 @@ namespace CharlesMyHousing.Migrations
                     CarparkOk = true,
                     PetOk = false,
                     OnMarktetFlg = true,
-                    Latitude = 0,
-                    Longitude = 0
+                    Latitude = null,
+                    Longitude = null
                 },
                 new HouseState
                 {
-                    // HouseStateId = 2,
+                    // HouseStateId = 23,
                     HouseName = "My Christchurch Address",
                     HouseType = 1,
                     Postcode = "8042",
@@ -57,12 +57,12 @@ namespace CharlesMyHousing.Migrations
                     CarparkOk = true,
                     PetOk = false,
                     OnMarktetFlg = true,
-                    Latitude = 0,
-                    Longitude = 0
+                    Latitude = null,
+                    Longitude = null
                 },
                 new HouseState
                 {
-                    // HouseStateId = 3,
+                    // HouseStateId = 24,
                     HouseName = "My Wellington Address",
                     HouseType = 1,
                     Postcode = "6037",
@@ -76,8 +76,8 @@ namespace CharlesMyHousing.Migrations
                     CarparkOk = true,
                     PetOk = false,
                     OnMarktetFlg = true,
-                    Latitude = 0,
-                    Longitude = 0
+                    Latitude = null,
+                    Longitude = null
                 }
             );
         }

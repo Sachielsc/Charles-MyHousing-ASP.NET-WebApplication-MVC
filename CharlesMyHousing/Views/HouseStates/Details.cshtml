@@ -121,21 +121,26 @@
         <dd>
             @Html.DisplayFor(model => model.Longitude)
         </dd>
-        
+
         <dt>
             @Html.DisplayNameFor(model => model.RentCases)
         </dt>
         <dd>
-        <table class="table">
-            <tr>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>User ID</th>
-                <th>HouseState ID</th>
-            </tr>
-            @foreach (var item in Model.RentCases)
+            <table class="table">
+                <tr>
+                    <th>Rent Case ID</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>User ID</th>
+                    <th>HouseState ID</th>
+                </tr>
+                @*TODO: why Model is capitalized, why modelItem a random name*@
+                @foreach (var item in Model.RentCases)
             {
                 <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RentCaseId)
+                    </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.StartDate)
                     </td>
@@ -149,10 +154,40 @@
                         @Html.DisplayFor(modelItem => item.HouseStateId)
                     </td>
                 </tr>
-            }
-        </table>
-    </dd>
+                }
+            </table>
+        </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.HousePictures)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>House Picture ID</th>
+                    <th>Image Path</th>
+                    <th>Main Image Flag</th>
+                    <th>HouseState ID</th>
+                </tr>
+                @foreach (var item in Model.HousePictures)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HousePictureId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ImagePath)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MainImgFlg)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HouseStateId)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
     </dl>
 </div>
 <p>

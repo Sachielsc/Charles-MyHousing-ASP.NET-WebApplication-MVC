@@ -198,6 +198,10 @@
     <Compile Include="Migrations\201711120040183_TryToPopulateRentCaseTable.Designer.cs">
       <DependentUpon>201711120040183_TryToPopulateRentCaseTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711120422271_PopulateHousePictureTable.cs" />
+    <Compile Include="Migrations\201711120422271_PopulateHousePictureTable.Designer.cs">
+      <DependentUpon>201711120422271_PopulateHousePictureTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HousePicture.cs" />
     <Compile Include="Models\HouseState.cs" />
@@ -214,6 +218,22 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\for_rent.jpg" />
+    <Content Include="Content\Images\for_sell.jpg" />
+    <Content Include="Content\Images\home_bg.jpg" />
+    <Content Include="Content\Images\house_1.jpg" />
+    <Content Include="Content\Images\house_2.jpg" />
+    <Content Include="Content\Images\house_3.jpg" />
+    <Content Include="Content\Images\house_4.jpg" />
+    <Content Include="Content\Images\house_5.jpg" />
+    <Content Include="Content\Images\house_6.jpg" />
+    <Content Include="Content\Images\rent_house_3_1.jpg" />
+    <Content Include="Content\Images\rent_house_3_2.jpg" />
+    <Content Include="Content\Images\rent_house_3_3.jpg" />
+    <Content Include="Content\Images\rent_house_3_4.jpg" />
+    <Content Include="Content\Images\rent_house_3_5.jpg" />
+    <Content Include="Content\Images\rent_house_3_6.jpg" />
+    <Content Include="Content\Images\rent_house_3_7.jpg" />
     <Content Include="docs\build_log.txt" />
     <Content Include="docs\data base screen shots\master_condition_item.png" />
     <Content Include="docs\data base screen shots\rent_case.png" />
@@ -312,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711120040183_TryToPopulateRentCaseTable.resx">
       <DependentUpon>201711120040183_TryToPopulateRentCaseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711120422271_PopulateHousePictureTable.resx">
+      <DependentUpon>201711120422271_PopulateHousePictureTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
