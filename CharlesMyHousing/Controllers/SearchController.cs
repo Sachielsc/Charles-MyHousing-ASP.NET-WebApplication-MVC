@@ -71,5 +71,30 @@ namespace CharlesMyHousing.Controllers
 
             return View(searchViewModel);
         }
+
+        public ActionResult CreateSearch(SearchViewModel searchViewModel, string actionButton)
+        {
+            switch (actionButton)
+            {
+                case "btnSearch":
+                    // search action
+                    initilizeCondition(searchModel.condition);
+                    searchModel.houseList = searchRentHouse(searchModel.condition, page);
+                    Session["RentHouseSearchCondition"] = searchModel.condition;
+                    break;
+                // case "btnPaging":
+                    // paging action
+                    // searchModel.condition = (RentHouseSearchConditionModel)Session["RentHouseSearchCondition"];
+                    // searchModel.houseList = searchRentHouse(searchModel.condition, page);
+                    // break;
+                default:
+                    // first access to search page
+                    searchModel.condition = new RentHouseSearchConditionModel();
+                    initilizeCondition(searchModel.condition);
+                    break;
+            }
+
+            return View(searchViewModel);
+        }
     }
 }

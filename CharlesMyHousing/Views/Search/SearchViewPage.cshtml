@@ -5,7 +5,7 @@
 }
 
 <h2>Enter your search conditions in the following form:</h2>
-@using (Html.BeginForm("SearchViewPage", "Search")) //TODO: change SearchViewPage action
+@using (Html.BeginForm("CreateSearch", "Search")) //TODO: change SearchViewPage action
 {
     <div class="panel panel-default">
         <div class="panel-body">
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="panel-footer">
-            <button type="submit" class="btn btn-primary" name="action_btn" value="btnSearch">Search</button>
+            <button type="submit" class="btn btn-primary" name="actionButton" value="btnSearch">Search</button>
         </div>
     </div>
 }
