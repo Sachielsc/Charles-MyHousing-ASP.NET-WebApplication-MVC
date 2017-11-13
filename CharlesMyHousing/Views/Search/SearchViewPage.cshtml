@@ -12,15 +12,12 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
-                        @Html.LabelFor( m => m.SearchCondition.Location )
-                        @* just an example for textbox *@
-                        @Html.TextBoxFor(m => m.SearchCondition.Location, new { @class="form-control"})
+                        @Html.LabelFor(m => m.SearchCondition.Location)
+                        @Html.DropDownListFor(m => m.SearchCondition.Location, new SelectList(Model.LocationList, "SearchOptionId", "ItemName"), "Select your house location", new { @class = "form-control" })
                     </div>
                     <div class="form-group">
                         @Html.LabelFor(m => m.SearchCondition.HouseType)
-                        @* TODO: bug here. Reason: database design problems *@
-                        @* @Html.DropDownListFor(m => m.SearchCondition.HouseType, new SelectList(Model.SearchCondition.HouseTypeList, "SearchOptionId", "ItemName"), "Select your house type", new { @class = "form-control" }) *@
-                        @Html.TextBoxFor(m => m.SearchCondition.HouseType, new { @class = "form-control" })
+                        @Html.DropDownListFor(m => m.SearchCondition.HouseType, new SelectList(Model.HouseTypeList, "SearchOptionId", "ItemName"), "Select your house type", new { @class = "form-control" })
                     </div>
                 </div>
 
@@ -59,7 +56,8 @@
                         </label>
                     </div>
                 </div>
-
+                
+                @*TODO: modify the price sector and learn about data validation*@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="price_from" class="control-label">Price (from)</label>

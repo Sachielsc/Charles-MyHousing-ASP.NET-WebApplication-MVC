@@ -10,8 +10,22 @@ namespace CharlesMyHousing.Controllers
 {
     public class SearchController : Controller
     {
+        private MyHousingContext db = new MyHousingContext();
+
         public ActionResult SearchViewPage()
         {
+            // Declare the location list in searchoptions
+            var locationList = (from pk in db.SearchOptions
+                where pk.GroupName == "Location"
+                orderby pk.SearchOptionId
+                select pk).ToList();
+
+            // Declare the location list in searchoptions
+            var houseTypeList = (from pk in db.SearchOptions
+                where pk.GroupName == "House Type"
+                orderby pk.SearchOptionId
+                select pk).ToList();
+
             // Declare the number list of room selections
             List<SelectListItem> selectListItems
                 = new List<SelectListItem>
@@ -49,8 +63,10 @@ namespace CharlesMyHousing.Controllers
                 };
 
             var searchViewModel = new SearchViewModel
-            { 
-                SelectListItems = selectListItems
+            {
+                SelectListItems = selectListItems,
+                LocationList = locationList,
+                HouseTypeList = houseTypeList
             };
 
             return View(searchViewModel);
