@@ -12,7 +12,7 @@ namespace CharlesMyHousing.Controllers
     {
         private MyHousingContext db = new MyHousingContext();
 
-        public ActionResult SearchViewPage()
+        private void InitilizeSearchViewCondition(SearchViewModel searchViewModel)
         {
             // Declare the location list in searchoptions
             var locationList = (from pk in db.SearchOptions
@@ -52,49 +52,33 @@ namespace CharlesMyHousing.Controllers
                     },
                     new SelectListItem
                     {
-                        Text = @"5 rooms",
+                        Text = @"more rooms",
                         Value = "5"
-                    },
-                    new SelectListItem
-                    {
-                        Text = @"6 rooms",
-                        Value = "6"
                     }
                 };
 
-            var searchViewModel = new SearchViewModel
-            {
-                SelectListItems = selectListItems,
-                LocationList = locationList,
-                HouseTypeList = houseTypeList
-            };
+            searchViewModel.SelectListItems = selectListItems;
+            searchViewModel.LocationList = locationList;
+            searchViewModel.HouseTypeList = houseTypeList;
+        }
 
+        public ActionResult SearchViewPage()
+        {
+            SearchViewModel searchViewModel = new SearchViewModel();
+            InitilizeSearchViewCondition(searchViewModel);
             return View(searchViewModel);
         }
 
-        public ActionResult CreateSearch(SearchViewModel searchViewModel, string actionButton)
+        public ActionResult SearchResultListViewPage(SearchViewModel searchViewModel, string actionButton)
         {
             switch (actionButton)
             {
                 case "btnSearch":
                     // search action
-                    initilizeCondition(searchModel.condition);
-                    searchModel.houseList = searchRentHouse(searchModel.condition, page);
-                    Session["RentHouseSearchCondition"] = searchModel.condition;
-                    break;
-                // case "btnPaging":
-                    // paging action
-                    // searchModel.condition = (RentHouseSearchConditionModel)Session["RentHouseSearchCondition"];
-                    // searchModel.houseList = searchRentHouse(searchModel.condition, page);
-                    // break;
-                default:
-                    // first access to search page
-                    searchModel.condition = new RentHouseSearchConditionModel();
-                    initilizeCondition(searchModel.condition);
                     break;
             }
 
-            return View(searchViewModel);
+            return View();
         }
     }
 }

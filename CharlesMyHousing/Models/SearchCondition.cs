@@ -28,12 +28,12 @@ namespace CharlesMyHousing.Models
 
         [Display(Name = "check in date")]
         [Required(ErrorMessage = "Check in date is required")]
-        [ValidDatepicker]
+        // [ValidDatepicker]
         public virtual string CheckinDate { set; get; }
 
         [Display(Name = "check out date")]
         [Required(ErrorMessage = "Check out date is required")]
-        [ValidDatepicker]
+        // [ValidDatepicker]
         public virtual string CheckoutDate { set; get; }
     }
 }
