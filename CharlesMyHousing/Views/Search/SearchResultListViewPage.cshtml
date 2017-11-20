@@ -1,7 +1,52 @@
-﻿
+﻿@model CharlesMyHousing.ViewModels.SearchViewModel
+
 @{
     ViewBag.Title = "SearchResultListViewPage";
 }
 
-<h2>SearchResultListViewPage</h2>
+<h3>The search condition you have put is:</h3>
+<dl>
+    <dt>
+        @Html.DisplayNameFor(model => model.SearchCondition.Location)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.SearchCondition.Location)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.SearchCondition.HouseType)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.SearchCondition.HouseType)
+    </dd>
+    <dt>
+        Bedroom number
+    </dt>
+    <dd>
+        From @Html.DisplayFor(model => model.SearchCondition.BedroomFrom) to @Html.DisplayFor(model => model.SearchCondition.BedroomTo)
+    </dd>
+    <dt>
+        Bathroom number
+    </dt>
+    <dd>
+        From @Html.DisplayFor(model => model.SearchCondition.BathroomFrom) to @Html.DisplayFor(model => model.SearchCondition.BathroomTo)
+    </dd>
+    <dt>
+        Expected price
+    </dt>
+    <dd>
+        From @Html.DisplayFor(model => model.SearchCondition.PriceFrom) to @Html.DisplayFor(model => model.SearchCondition.PriceTo)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.SearchCondition.CarparkOk)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.SearchCondition.CarparkOk)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.SearchCondition.PetOk)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.SearchCondition.PetOk)
+    </dd>
+</dl>
 

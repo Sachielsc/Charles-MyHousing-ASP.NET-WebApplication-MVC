@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CharlesMyHousing.Models;
@@ -74,11 +75,13 @@ namespace CharlesMyHousing.Controllers
             switch (actionButton)
             {
                 case "btnSearch":
-                    // search action
+                    // put search action here
                     break;
+                default:
+                    // go to bad request if directly type in this url
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-
-            return View();
+            return View(searchViewModel);
         }
     }
 }
