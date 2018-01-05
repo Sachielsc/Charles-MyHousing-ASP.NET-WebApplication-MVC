@@ -1,9 +1,9 @@
-﻿9th Dec, 2017
+﻿5th Jan, 2018
 
 ### Download SQL Server 2017 for Windows ###
 https://www.microsoft.com/en-us/sql-server/sql-server-downloads
 
-### Download SQL Server Management Studio 17.3 ###
+### Download SQL Server Management Studio 17.4 ###
 https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms
 
 ### visual studio - create the project ###
